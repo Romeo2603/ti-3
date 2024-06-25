@@ -1,0 +1,117 @@
+body {
+
+    font-family: "Open Sans", "Arial", "sans-serif";
+
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+h1 {
+    //styleName: Headings/H1/desktop;
+font-family: "Open Sans";
+font-size: 60px;
+font-weight: 700;
+line-height: 66px;
+text-align: left;
+
+}
+
+h2 {
+    //styleName: Headings/H2/desktop;
+font-family: "Open Sans";
+font-size: 30px;
+font-weight: 700;
+line-height: 36px;
+text-align: left;
+
+}
+
+main {
+    //styleName: Text/main/desktop;
+font-family: Open Sans;
+font-size: 20px;
+font-weight: 400;
+line-height: 30px;
+text-align: left;
+
+}
+
+button {
+    //styleName: Text/interface/desktop;
+font-family: Open Sans;
+font-size: 20px;
+font-weight: 400;
+line-height: 20px;
+text-align: center;
+
+}
+
+a {
+    //styleName: Text/interface/desktop;
+font-family: Open Sans;
+font-size: 20px;
+font-weight: 400;
+line-height: 20px;
+text-align: center;
+}
+:root {
+    --txt-color: #212121;
+    --blue: #09A494;
+    --bg-color: #FFFFFF;
+}
+body {
+    color: var(--txt-color);
+    background-color: var(--bg-color);
+}
+footer {
+    color: var(--bg-color);
+    background-color: var(--txt-color);
+}
+*,
+*::before,
+*::after {
+    box-sizing:border-box;
+}
+.container {
+    min-width: 320px;
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.main-nav a {
+    display: inline-block;
+    text-decoration: none;
+    color: var(--txt-color);
+    padding: 10px;
+    margin: 0;
+}
+
+.main-nav a:hover {
+    color: var(--blue);
+}
+button {
+    padding: 0;
+    border: none;
+    color: var(--blue);
+    background-color: transparent;
+    cursor: pointer;
+    text-transform:lowercase;
+    width: Hug (148px)px;
+    height: Hug (36px)px;
+    padding: 6px;
+    gap: 10px;
+    border-radius: 8px;
+    border: 1px;
+    opacity: 0px;
+    border: 1px solid #09A494
+}
+button:hover {
+    background-color: var(--blue);
+    color: var(--bg-color);
+}
+
+.photo {
+    border-radius: 50%;
+}
