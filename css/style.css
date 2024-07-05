@@ -142,7 +142,11 @@ button:hover {
 }
 
 .social-link {
-    display: block;
+
+}
+.social-link a {
+    background-repeat:no-repeat;
+    background-position: 50%; 
     width: 50px;
     height: 50px;
     top: 20px;
@@ -151,24 +155,27 @@ button:hover {
     gap: 10px;
     border-radius: 50%;
     opacity: 100%;
-    border: 1px solid #09A494    
+    display: block;
+    border: 1px solid #09A494  
+    
 }
 
-.social-link:hover {
+.social-link:hover a {
     background-color: var(--blue);
 }
 
 .social-link-github a {
     display: block;
-    background-image: url("img/social=github.svg");
+    background-image: url("../img/social=github.svg");
+
 }
-.social-link-tg {
+.social-link-tg a {
     display: block;
-    background-image: url("img/social=telegram.svg");
+    background-image: url("../img/social=telegram.svg");
 }
-.social-link-vk {
+.social-link-vk a {
     display: block;
-    background-image: url("img/social=vk.svg");
+    background-image: url("../img/social=vk.svg");
 }
 .contact {
     margin: 0;
@@ -177,8 +184,87 @@ button:hover {
 }
 
 
-.contact-link {
+.contact li {
+    list-style-type: none;
     display: inline-block;
     margin: 0;
+    padding-left: 42px;
+}
+
+
+.contact-link a{
+    display: block;
+    background-repeat:no-repeat;
+    background-position: 50%; 
+    width: 50px;
+    height: 50px;
+    top: 20px;
+    left: 20px;
     padding: 0;
+    gap: 10px;
+    border-radius: 50%;
+    opacity: 100%;
+}
+
+.contact-link-tel a {
+    background-image: url("../img/icon=phone.svg" );
+}
+
+.contact-link-mail a {
+    background-image: url("../img/icon=email.svg");
+}
+.skill-list {
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+}
+
+
+.skill-list dt {
+    margin-bottom: 6px;
+    padding: 5px 0 5px 38px;
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: 30px;
+}
+
+
+.skill-level {
+    margin: 4px 0 20px;
+    padding: 2px;
+    font-size: 0;
+    border: 1px solid var(--blue);
+    border-radius: 16px;
+}
+
+
+.skill-level div {
+    height: 14px;
+    background-color: var(--blue);
+    border-radius: 8px;
+}
+
+
+.skill-item {
+    text-transform: lowercase;
+}
+
+
+.skill-item_html {
+    background-image: url("../img/skill=html.svg");
+}
+
+
+.skill-item_css {
+    background-image: url("../img/skill=css.svg");
+}
+
+
+.skill-item_cpp {
+    background-image: url("../img/skill=c++.svg");
+}
+
+
+.skill-item_python {
+    background-image: url("../img/skill=python.svg");
 }
