@@ -177,42 +177,55 @@ button:hover {
     display: block;
     background-image: url("../img/social=vk.svg");
 }
+
 .contact {
-    margin: 0;
+    display: inline-flex;
+    margin: 0 auto;
+    margin-bottom: 40px;
     padding: 0;
     list-style-type: none;
+    gap: 40px;
+    white-space: nowrap;
 }
 
+.contacts {
+    margin-bottom: 120px;
+}
 
 .contact li {
-    list-style-type: none;
     display: inline-block;
     margin: 0;
-    padding-left: 42px;
-}
-
-
-.contact-link a{
-    display: block;
-    background-repeat:no-repeat;
-    background-position: 50%; 
-    width: 50px;
-    height: 50px;
-    top: 20px;
-    left: 20px;
     padding: 0;
-    gap: 10px;
-    border-radius: 50%;
-    opacity: 100%;
 }
 
-.contact-link-tel a {
-    background-image: url("../img/icon=phone.svg" );
+.contact-link {
+    display: block;
+    padding: 0px 0px 0px 42px;
+    background-repeat: no-repeat;
+    background-position: left;
+    text-decoration: none;
+    color: var(--txt-color);
+    padding-top: 5px;
+    padding-bottom: 5px;
 }
 
-.contact-link-mail a {
+.contact-link:hover {
+    color: var(--green);
+}
+
+.contact-link img {
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+.contact-link-tel {
+    background-image: url("../img/icon=phone.svg");
+}
+
+.contact-link-mail {
     background-image: url("../img/icon=email.svg");
 }
+
 .skill-list {
     margin: 0;
     padding: 0;
