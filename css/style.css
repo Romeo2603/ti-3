@@ -12,7 +12,7 @@ h1 {
     font-family: "Open Sans";
     font-size: 60px;
     font-weight: 700;
-    line-height: 66px;
+    line-height: 1.1;
     text-align: left;
 
 }
@@ -22,7 +22,7 @@ h2 {
     font-family: "Open Sans";
 font-size: 30px;
 font-weight: 700;
-line-height: 36px;
+line-height: 1.1;
 text-align: left;
 
 }
@@ -32,7 +32,7 @@ main {
 font-family: Open Sans;
 font-size: 20px;
 font-weight: 400;
-line-height: 30px;
+line-height: 1.5;
 text-align: left;
 
 }
@@ -42,7 +42,7 @@ button {
 font-family: Open Sans;
 font-size: 20px;
 font-weight: 400;
-line-height: 20px;
+line-height: 1;
 text-align: center;
 
 }
@@ -52,12 +52,12 @@ a {
 font-family: Open Sans;
 font-size: 20px;
 font-weight: 400;
-line-height: 20px;
+line-height: 1;
 text-align: center;
 }
 :root {
     --txt-color: #212121;
-    --blue: #09A494;
+    --green: #09A494;
     --bg-color: #FFFFFF;
 }
 body {
@@ -89,26 +89,21 @@ footer {
 }
 
 .main-nav a:hover {
-    color: var(--blue);
+    color: var(--green);
 }
 button {
     padding: 0;
     border: none;
-    color: var(--blue);
+    color: var(--green);
     background-color: transparent;
     cursor: pointer;
     text-transform:lowercase;
-    width: Hug (148px)px;
-    height: Hug (36px)px;
     padding: 6px;
-    gap: 10px;
     border-radius: 8px;
-    border: 1px;
-    opacity: 0px;
-    border: 1px solid #09A494
+    border: 1px solid var(--green)
 }
 button:hover {
-    background-color: var(--blue);
+    background-color: var(--green);
     color: var(--bg-color);
 }
 
@@ -156,12 +151,12 @@ button:hover {
     border-radius: 50%;
     opacity: 100%;
     display: block;
-    border: 1px solid #09A494  
+    border: 1px solid var(--green)
     
 }
 
 .social-link:hover a {
-    background-color: var(--blue);
+    background-color: var(--green);
 }
 
 .social-link-github a {
@@ -200,7 +195,7 @@ button:hover {
 
 .contact-link {
     display: block;
-    padding: 0px 0px 0px 42px;
+    padding: 0 0 0 42px;
     background-repeat: no-repeat;
     background-position: left;
     text-decoration: none;
@@ -246,14 +241,14 @@ button:hover {
     margin: 4px 0 20px;
     padding: 2px;
     font-size: 0;
-    border: 1px solid var(--blue);
+    border: 1px solid var(--green);
     border-radius: 16px;
 }
 
 
 .skill-level div {
     height: 14px;
-    background-color: var(--blue);
+    background-color: var(--green);
     border-radius: 8px;
 }
 
@@ -280,4 +275,12 @@ button:hover {
 
 .skill-item_python {
     background-image: url("../img/skill=python.svg");
+}
+
+.main-header {
+    display: flex;
+    padding-top: 60px;
+    gap: 40px;
+    align-items: center;
+    flex-direction: row;
 }
