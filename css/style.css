@@ -43,13 +43,11 @@ p:last-child {
 }
 
 main {
-
-font-family: Open Sans;
-font-size: 20px;
-font-weight: 400;
-line-height: 1.5;
-text-align: left;
-
+    font-family: Open Sans;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 1.5;
+    text-align: left;
 }
 
 button {
@@ -76,6 +74,11 @@ text-align: center;
     --bg-color: #FFFFFF;
 }
 body {
+    font-family: "Open Sans", "Arial", sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 1.5;
+    text-align: left;
     color: var(--txt-color);
     background-color: var(--bg-color);
 }
@@ -357,13 +360,17 @@ button:hover {
     margin-top: 0;
 }
 
-.profile p {
+.subtitle {
     font-family: "Open Sans", "Arial", sans-serif;
     font-size: 38px;
     font-weight: 400;
     line-height: 1.2;
     color: var(--green);
     background-color: var(--bg-color);
+}
+
+.profile p {
+    margin: 0;
 }
 
 .text-wrapper {
@@ -520,7 +527,9 @@ button:hover {
           height: 150px;
           order: 0;
         }
-  
+        p {
+            font-size: 14px;
+        }
         .contacts {
           margin-bottom: 50px;
         }
