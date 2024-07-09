@@ -30,10 +30,6 @@ h2 {
 }
 
 p {
-    font-family: "Open Sans", sans-serif;
-    font-size: 20px;
-    font-weight: 400;
-    line-height: 1.5;
     margin: 0;
     margin-bottom: 15px;
 }
@@ -43,30 +39,19 @@ p:last-child {
 }
 
 main {
-    font-family: Open Sans;
-    font-size: 20px;
-    font-weight: 400;
     line-height: 1.5;
     text-align: left;
 }
 
 button {
-
-font-family: Open Sans;
-font-size: 20px;
-font-weight: 400;
 line-height: 1;
 text-align: center;
 
 }
 
 a {
-
-font-family: Open Sans;
-font-size: 20px;
-font-weight: 400;
 line-height: 1;
-text-align: center;
+
 }
 :root {
     --txt-color: #212121;
@@ -114,6 +99,7 @@ section {
     text-decoration: none;
     padding: 10px 15px 10px 15px;
     color: var(--txt-color);
+    text-align: center;
 }
 
 .main-nav a:hover {
@@ -150,6 +136,7 @@ button:hover {
     gap: 20px;
     list-style-type: none;
     white-space: nowrap;
+    flex-wrap: wrap;
 }
 
 
@@ -213,6 +200,7 @@ button:hover {
     list-style-type: none;
     gap: 40px;
     white-space: nowrap;
+    flex-wrap: wrap;
 }
 
 .contacts {
@@ -266,7 +254,7 @@ button:hover {
 }
 
 .skills-header {
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -409,11 +397,13 @@ button:hover {
 
       .contacts {
         margin-bottom: 80px;
+
       }
 
       .contact-link {
         padding-top: 7px;
         padding-bottom: 7px;
+
       }
 
       .main-header {
@@ -553,7 +543,9 @@ button:hover {
         .skills-button button {
           text-align: center;
         }
-  
+        .social {
+          gap:15px;
+        }
   }
 
   @media screen and (max-width: 360px) {   
@@ -569,6 +561,7 @@ button:hover {
       .contact-link {
         padding-top: 8px;
         padding-bottom: 8px;
+        
       }
 
       .skills {
@@ -602,5 +595,15 @@ button:hover {
 
       .social {
         flex-wrap: wrap;
+      }
+    }
+
+    @media  screen and (max-width: 550px) {
+      .skills-button {
+        gap: 10px;
+        width: 100%;
+      }
+      .contact {
+        gap: 15px;
       }
     }
